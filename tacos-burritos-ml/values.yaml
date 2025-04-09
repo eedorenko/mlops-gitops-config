@@ -1,7 +1,7 @@
 task:
   name: tacos-burritos-ml
   model:
-    class_mapping:
+    class_mapping: |+
         0: raw_chicken_wing
         1: raw_chicken_thigh
         2: raw_chicken_drum

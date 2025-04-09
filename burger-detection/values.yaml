@@ -1,0 +1,12 @@
+task:
+  type: object_detection
+  model:
+    class_mapping: "{0:patty, 1:in_progress, 2:completed_burger, 3:packaged_burger}"
+    confidence_threshold: "0.75"
+  worker:
+    operating_fps: "6"
+    tracker: 
+      name: norfair
+      distance_function: "kou"
+      distance_threshold: "0.75"
+    object_inactivity_threshold: "120s"

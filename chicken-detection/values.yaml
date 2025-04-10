@@ -1,5 +1,5 @@
-image: ghcr.io/eedorenko/mlops-gitops/burger_detection_model_automl:$IMAGE_TAG
-serviceAccountName: entree-detection-sa
+image: ghcr.io/eedorenko/mlops-gitops/chicken_detection_model_automl:$IMAGE_TAG
+serviceAccountName: chicken-detection-sa
 task:
   name: entree-detection 
   type: object_detection

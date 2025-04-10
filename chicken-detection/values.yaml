@@ -1,4 +1,5 @@
 image: ghcr.io/eedorenko/mlops-gitops/burger_detection_model_automl:$IMAGE_TAG
+serviceAccountName: entree-detection-sa
 task:
   name: entree-detection 
   type: object_detection
@@ -8,7 +9,7 @@ task:
         2:raw_chicken_drum, 3:raw_chicken_breast, 
         4: cooked_chicken_wing, 5: cooked_chicken_thigh, 
         6: cooked_chicken_drum, 7:cooked_chicken_breast}
-        
+
     confidence_threshold: "0.65"
   worker:
     operating_fps: "6"

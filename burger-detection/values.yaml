@@ -1,4 +1,5 @@
 image: ghcr.io/eedorenko/mlops-gitops/burger_detection_model_automl:$IMAGE_TAG
+serviceAccountName: burgert-detection-sa
 task:
   name: burger-detection 
   type: object_detection
